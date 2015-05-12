@@ -1,0 +1,15 @@
+
+This code is designed to scale and register two pose graphs that are related by
+a constant transform, such as the trajectory of two sensors mounted ot the same
+rigid body.  This code estimates the scaled transform that aligns the two
+trajectories.
+
+The key function is "RegisterSensors( camposes, armposes )"
+
+As an example see RegisterCam2Arm.m.
+
+To produce camera poses use vicalib:
+GLOG_logtostderr=1  ./vicalib  -cam file://./image* -grid_preset=letter -exit_vicalib_on_finish=false -save_poses=true -model_files=cameras.xml -calibrate_intrinsics=false
+
+where cameras.xml is the already calibrated camera model.
+

@@ -14,13 +14,13 @@ function RegisterSensors( camposes, armposes )
     ctx.orig_traj_c1 = armposes;
     ctx.orig_traj_c2 = camposes;
 
-    ApplyUpdate(ctx.x);
+    %ApplyUpdate(ctx.x);
     PlotSystem();
 
-    if 1
-        DoTimeRegistration();
-        return;
-    end
+%     if 0
+%         DoTimeRegistration();
+%         return;
+%     end
 
     
     opts = optimset('Display', 'Iter');

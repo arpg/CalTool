@@ -6,5 +6,9 @@ function [ poses ] = LoadSDTrackPoses(camfile)
         singlePose = p(ii,1:6);
         poses(:,ii) = singlePose;
     end
+    
+    %SDTrack does not produce vision convention frames
+    %Appears to be robotics frame (x is fwd, y is left, z is up)
+    
 end
 

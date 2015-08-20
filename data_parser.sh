@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+#
 # Copyright 2015  Christoffer Heckman
 #                 Steve McGuire
 #                 Regents of the University of Colorado
